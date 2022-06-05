@@ -1,0 +1,24 @@
+#last-footer{
+    background-color: #ddeff6;
+    text-align: left;
+}
+
+span {
+    margin-left: 5px;
+}
+
+.container-fluid{
+    padding: 5% 8%;
+    font-family: "montserrat-light";
+}
+
+.followUs a {
+    text-decoration: none;
+    color: black;
+    font-size: 26px;
+    padding: 2px;
+}
+
+.followUs a:hover {
+    color: rgb(73, 73, 73);
+}
