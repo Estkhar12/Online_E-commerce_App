@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('dotenv').config()
 
 const path = require("path");
 const fs = require('fs');
@@ -17,7 +17,6 @@ const morgan = require("morgan");
 const errorController = require("./controllers/error");
 // const mongoConnect = require("./util/database").mongoConnect;
 const User = require("./models/user");
-
 
 const app = express();
 const store = new MongoDBstore({
