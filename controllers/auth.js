@@ -9,8 +9,8 @@ const User = require("../models/user");
 
 const auth = {
   auth: {
-    api_key: "0b344c6578f057461534d625759040ba-8d821f0c-f357cd80",
-    domain: "sandbox79480b481974433d9e764cc8815d63eb.mailgun.org",
+    api_key: process.env.MAILGUN_KEY,
+    domain: process.env.MAILGUN_DOMAIN,
   },
 };
 
@@ -217,7 +217,7 @@ exports.postReset = (req, res, next) => {
           subject: "Password reset",
           html: `
           <p> You requested a password reset </p>
-          <p> Click this <a href="http://localhost:3000/reset/${token}">link</a> to set a new password.</p>
+          <p> Click this <a href="https://shop-estkhar.herokuapp.com/reset/${token}">link</a> to set a new password.</p>
           `,
         });
       })

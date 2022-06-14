@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const path = require("path");
 const fs = require('fs');
 
@@ -16,12 +18,10 @@ const errorController = require("./controllers/error");
 // const mongoConnect = require("./util/database").mongoConnect;
 const User = require("./models/user");
 
-const MONGODB_URI =
-  "mongodb+srv://admin-sagu:Estkhar123@cluster0.9uub3.mongodb.net/shop";
 
 const app = express();
 const store = new MongoDBstore({
-  uri: MONGODB_URI,
+  uri: process.env.MONGODB_URI,
   collection: "sessions",
 });
 
@@ -68,6 +68,7 @@ app.use(
   multer({ storage: storage, fileFilter: fileFilter }).single("image")
 );
 app.use(express.static(path.join(__dirname, "public")));
+
 app.use('/images', express.static(path.join(__dirname, "images")));
 app.use(
   session({
@@ -125,7 +126,7 @@ app.use((error, req, res, next) => {
 });
 
 mongoose
-  .connect(MONGODB_URI)
+  .connect(process.env.MONGODB_URI)
   .then((result) => {
     app.listen(process.env.PORT || 3000, () => {
       console.log("Server is running on 3000");
