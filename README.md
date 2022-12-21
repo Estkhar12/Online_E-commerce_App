@@ -3,7 +3,7 @@
 #Online Ecommerce Application
 ##This is an online ecommerce shop build with Node, Express and MongoDB. It has following features.
 
-##Feature
+#Feature
 -Login and signup
 -Reset Password
 -Session and Cookies
