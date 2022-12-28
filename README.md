@@ -5,10 +5,15 @@
 
 #Feature
 -Login and signup
+
 -Reset Password
+
 -Session and Cookies
+
 -Adding and deleting products
+
 -Validation on input fields
+
 -Sending automatic email on signup
 -Stripe payment gateway
 -Automatic invoice generation after order
