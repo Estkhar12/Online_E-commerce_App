@@ -1,47 +1,40 @@
 # shopyfy
 
-#Online Ecommerce Application
-##This is an online ecommerce shop build with Node, Express and MongoDB. It has following features.
+# Online Ecommerce Application
 
-#Feature
--Login and signup
+## This is an online ecommerce shop build with Node, Express and MongoDB. It has following features.
 
--Reset Password
+# Feature
 
--Session and Cookies
+- Login and signup
+- Reset Password
+- Session and Cookies
+- Adding and deleting products
+- Validation on input fields
+- Sending automatic email on signup
+- Stripe payment gateway
+- Automatic invoice generation after order
+- Pagination on products list page
+- File uploads and downloads
+- And many more ....
 
--Adding and deleting products
-
--Validation on input fields
-
--Sending automatic email on signup
--Stripe payment gateway
--Automatic invoice generation after order
--Pagination on products list page
--File uploads and downloads
--And many more ....
-#Main technology and framework used
--Node.js
--Express
--MongoDB
--Mongoose
--Requirements
+# Main technology and framework used
+- Node.js
+- Express
+- MongoDB
+- Mongoose
+- Requirements
 if you want to run this app in your project then the following things must be installed in your system
 
 Node.js
 MongoDB
 Installation
-Clone the repository https://github.com/Estkhar12/nodejs-e-commerce.git
 
-Open the project in VS code or any other code editor.
-
-Run npm intall in terminal to download all the dependencies
-
-Get Mongodb atlas url or use your local database
-
-Create a .env file in the root directory
-
-Run command npm start to run the code.
+- Open the project in VS code or any other code editor.
+- Run npm intall in terminal to download all the dependencies
+- Get Mongodb atlas url or use your local database
+- Create a .env file in the root directory
+- Run command npm start to run the code.
 
 .env file should contain the following data
 SENDGRID_API_KEY=(Add your sendgrid api key for email sending)
