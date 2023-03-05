@@ -36,11 +36,12 @@ Installation
 - Create a .env file in the root directory
 - Run command npm start to run the code.
 
-.env file should contain the following data
-SENDGRID_API_KEY=(Add your sendgrid api key for email sending)
-SESSION_SECRET_KEY=(Put any session secret string you want)
-STRIPE_API_KEY=(Add Your Stripe API Key)
-If you are using Mongodb atlas then also put
+-.env file should contain the following data
 
-MONGO_USERID=(Atlas user id)
-MONGO_PASSWORD=(atlas password) If you are using local database then replace MONGODB_URI in app.js file with mongodb://localhost:27017/shop
+--SENDGRID_API_KEY=(Add your sendgrid api key for email sending)
+--SESSION_SECRET_KEY=(Put any session secret string you want)
+--STRIPE_API_KEY=(Add Your Stripe API Key)
+--If you are using Mongodb atlas then also put
+
+-MONGO_USERID=(Atlas user id)
+-MONGO_PASSWORD=(atlas password) If you are using local database then replace MONGODB_URI in app.js file with mongodb://localhost:27017/shop
